@@ -1,0 +1,30 @@
+{
+  "productos": [
+    {
+      "id": 1001,
+      "nombre": "PlayStation 5",
+      "descripcion": "Consola de última generación",
+      "caracteristicas": [
+        "Consola de videojuegos de última generación con soporte 4K",
+        "Incluye mando DualSense con retroceso háptico"
+      ],
+      "precio": 499.99,
+      "stock": 50,
+      "categoria": "Tecnología",
+      "imagen": "imagenes/ps5.webp"
+    },
+    {
+      "id": 1002,
+      "nombre": "Figura Spy x Family - Yor Forger",
+      "descripcion": "Figura coleccionable de 30 cm",
+      "caracteristicas": [
+        "Figura de alta calidad con detalles ultrarrealistas",
+        "Material PVC premium pintado a mano"
+      ],
+      "precio": 59.99,
+      "stock": 200,
+      "categoria": "Anime/Manga",
+      "imagen": "/imagenes/yor-forger.webp"
+    }
+  ]
+}
