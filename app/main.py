@@ -19,7 +19,7 @@ app.mount("/imagenes", StaticFiles(directory=imagenes_dir), name="imagenes")
 current_dir = os.path.dirname(os.path.abspath(__file__))
 db_path = os.path.join(current_dir, "db.json")
 
-with open(db_path, "r") as f:
+with open(db_path, "r", encoding='utf-8') as f:
     data = json.load(f)
     db = data["productos"]  # <-- Extraer solo los productos
 

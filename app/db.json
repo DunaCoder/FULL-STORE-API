@@ -6,25 +6,127 @@
       "descripcion": "Consola de última generación",
       "caracteristicas": [
         "Consola de videojuegos de última generación con soporte 4K",
-        "Incluye mando DualSense con retroceso háptico"
+        "Incluye mando DualSense con retroceso háptico",
+        "Disco SSD de alta velocidad 825GB",
+        "Compatibilidad con Ray Tracing y 120 fps"
       ],
       "precio": 499.99,
       "stock": 50,
       "categoria": "Tecnología",
-      "imagen": "imagenes/ps5.webp"
+      "imagen": "/ps5.webp",
+      "id_proveedor": 6
     },
     {
       "id": 1002,
+      "nombre": "Samsung Galaxy S23",
+      "descripcion": "Smartphone Android con 256GB",
+      "caracteristicas": [
+        "Pantalla Dynamic AMOLED 2X de 6.1 pulgadas",
+        "Procesador Snapdragon 8 Gen 2 optimizado",
+        "Cámara triple de 50MP con estabilización óptica",
+        "Resistencia IP68 y vidrio Gorilla Glass Victus 2"
+      ],
+      "precio": 999.00,
+      "stock": 120,
+      "categoria": "Tecnología",
+      "imagen": "/samsung-galaxy-s23.webp",
+      "id_proveedor": 6
+    },
+    {
+      "id": 1003,
       "nombre": "Figura Spy x Family - Yor Forger",
       "descripcion": "Figura coleccionable de 30 cm",
       "caracteristicas": [
         "Figura de alta calidad con detalles ultrarrealistas",
-        "Material PVC premium pintado a mano"
+        "Material PVC premium pintado a mano",
+        "Base especial con temática del anime",
+        "Edición limitada con certificado de autenticidad"
       ],
       "precio": 59.99,
       "stock": 200,
-      "categoria": "Anime/Manga",
-      "imagen": "/imagenes/yor-forger.webp"
+      "categoria": "Coleccionables",
+      "imagen": "/yor-forger.webp",
+      "id_proveedor": 5
+    },
+    {
+      "id": 1004,
+      "nombre": "Vestido Sexy Espalda Cubierta",
+      "descripcion": "Conjunto elegante de moda para mujer",
+      "caracteristicas": [
+        "Vestidos sexis con espalda descubierta y cuello Halter",
+        "Color sólido elegante",
+        "Tejido de satén de alta calidad",
+        "Talles disponibles: XS a XL"
+      ],
+      "precio": 199.50,
+      "stock": 75,
+      "categoria": "Ropa",
+      "imagen": "/vestido.webp",
+      "id_proveedor": 9
+    },
+    {
+      "id": 1005,
+      "nombre": "Chaqueta Cuero Unisex",
+      "descripcion": "Chaqueta de cuero genuino",
+      "caracteristicas": [
+        "Cuero 100% genuino de primera calidad",
+        "Forro interior suave y transpirable",
+        "Cremalleras reforzadas y puños ajustables",
+        "Resistente al agua y al frío"
+      ],
+      "precio": 199.50,
+      "stock": 60,
+      "categoria": "Ropa",
+      "imagen": "/chaqueta-cuero.webp",
+      "id_proveedor": 9
+    },
+    {
+      "id": 1006,
+      "nombre": "Juego de Sartenes Profesional",
+      "descripcion": "Antiadherente cerámico 5 piezas",
+      "caracteristicas": [
+        "Revestimiento cerámico libre de PFOA",
+        "Apta para todo tipo de cocinas",
+        "Mangos ergonómicos antiadherentes",
+        "Garantía de 5 años"
+      ],
+      "precio": 89.99,
+      "stock": 100,
+      "categoria": "Hogar",
+      "imagen": "/sartenes.webp",
+      "id_proveedor": 4
+    },
+    {
+      "id": 1007,
+      "nombre": "Monitor Gamer 27\"",
+      "descripcion": "100Hz, 1ms, QHD",
+      "caracteristicas": [
+        "Panel IPS de 27 pulgadas",
+        "Tasa de refresco de 100Hz",
+        "Tiempo de respuesta 1ms",
+        "Soporte para G-Sync y FreeSync"
+      ],
+      "precio": 449.99,
+      "stock": 35,
+      "categoria": "Tecnología",
+      "imagen": "/monitor-gamer.webp",
+      "id_proveedor": 10
+    },
+    {
+      "id": 1008,
+      "nombre": "Tienda Campaña 4 Personas",
+      "descripcion": "Impermeable, fácil montaje",
+      "caracteristicas": [
+        "Capacidad para 4 personas",
+        "Impermeable 5000mm",
+        "Estructura de aluminio aeronáutico",
+        "Incluye kit de reparación"
+      ],
+      "precio": 149.99,
+      "stock": 30,
+      "categoria": "Aire Libre",
+      "imagen": "/tienda-campana.webp",
+      "id_proveedor": 3
     }
   ]
 }
