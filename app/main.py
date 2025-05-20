@@ -18,10 +18,17 @@ app.mount("/imagenes", StaticFiles(directory=imagenes_dir), name="imagenes")
 # Obtener el directorio actual del archivo
 current_dir = os.path.dirname(os.path.abspath(__file__))
 db_path = os.path.join(current_dir, "db.json")
+proveedores_path = os.path.join(current_dir, "proveedores.json")
+# Cargar los datos de productos y proveedores desde el archivo JSON
 
 with open(db_path, "r", encoding='utf-8') as f:
     data = json.load(f)
-    db = data["productos"]  # <-- Extraer solo los productos
+    db = data["productos"]
+
+with open(proveedores_path, "r", encoding='utf-8') as f:
+    proveedores_data = json.load(f)
+    proveedores = proveedores_data["proveedores"]
+
 
 class Item(BaseModel):
     nombre: str
@@ -31,9 +38,23 @@ class Item(BaseModel):
     stock: int
     categoria: str
     imagen: str
+    id_proveedor: int
 
 class ItemResponse(Item):
     id: int
+
+class Proveedor(BaseModel):
+    id: int
+    nombre: str
+    paisDeOrigen: str
+
+@app.get("/", include_in_schema=False)
+def root():
+    return {"message": "Bienvenido a la API de productos"}
+
+@app.get("/status/", include_in_schema=False)
+def status():
+    return {"status": "API en funcionamiento"}
 
 @app.get("/productos/", response_model=List[ItemResponse])
 def obtener_productos():
@@ -45,6 +66,17 @@ def obtener_producto(producto_id: int):
         if producto["id"] == producto_id:
             return producto
     raise HTTPException(status_code=404, detail="Producto no encontrado")
+
+@app.get("/proveedores/", response_model=List[Proveedor])
+def obtener_proveedores():
+    return proveedores
+
+@app.get("/productos/proveedor/{proveedor_id}", response_model=List[ItemResponse])
+def obtener_productos_por_proveedor(proveedor_id: int):
+    productos_filtrados = [producto for producto in db if producto["id_proveedor"] == proveedor_id]
+    if not productos_filtrados:
+        raise HTTPException(status_code=404, detail="No se encontraron productos para este proveedor")
+    return productos_filtrados
 
 @app.post("/productos/", response_model=ItemResponse)
 def crear_producto(item: Item):
@@ -81,8 +113,3 @@ def eliminar_producto(producto_id: int):
 def guardar_datos():
     with open(db_path, "w") as f:  # <-- Usa la ruta absoluta
         json.dump(db, f, indent=4, ensure_ascii=False)
-# {
-#     "nombre": "Producto X",
-#     "precio": 28.99,
-#     "descripcion": "Un producto propio"
-# }
