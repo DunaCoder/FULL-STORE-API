@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 import json
 from typing import List, Optional
 from pydantic import BaseModel
@@ -8,6 +9,16 @@ import os
 
 
 app = FastAPI()
+
+origins = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000").split(",")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_headers=["*"],
+)
 
 # Obtener la ruta absoluta de la carpeta "imagenes"
 imagenes_dir = Path(__file__).parent.parent / "imagenes"  # Si main.py está en app/
