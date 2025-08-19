@@ -13,7 +13,7 @@
       "precio": 499.99,
       "stock": 50,
       "categoria": "Tecnología",
-      "imagen": "http://127.0.0.1:8000/imagenes/ps5.webp",
+      "imagen": "https://full-store-api-39oh.vercel.app/imagenes/ps5.webp",
       "id_proveedor": 6
     },
     {
@@ -29,7 +29,7 @@
       "precio": 999.00,
       "stock": 120,
       "categoria": "Tecnología",
-      "imagen": "http://127.0.0.1:8000/imagenes/SamsungS23.webp",
+      "imagen": "https://full-store-api-39oh.vercel.app/imagenes/SamsungS23.webp",
       "id_proveedor": 6
     },
     {
@@ -45,7 +45,7 @@
       "precio": 59.99,
       "stock": 200,
       "categoria": "Coleccionables",
-      "imagen": "http://127.0.0.1:8000/imagenes/yorForge.webp",
+      "imagen": "https://full-store-api-39oh.vercel.app/imagenes/yorForge.webp",
       "id_proveedor": 5
     },
     {
@@ -61,7 +61,7 @@
       "precio": 199.50,
       "stock": 75,
       "categoria": "Ropa",
-      "imagen": "http://127.0.0.1:8000/imagenes/vestido.webp",
+      "imagen": "https://full-store-api-39oh.vercel.app/imagenes/vestido.webp",
       "id_proveedor": 9
     },
     {
@@ -77,7 +77,7 @@
       "precio": 199.50,
       "stock": 60,
       "categoria": "Ropa",
-      "imagen": "http://127.0.0.1:8000/imagenes/ChaquetaCuero.webp",
+      "imagen": "https://full-store-api-39oh.vercel.app/imagenes/ChaquetaCuero.webp",
       "id_proveedor": 9
     },
     {
@@ -93,7 +93,7 @@
       "precio": 89.99,
       "stock": 100,
       "categoria": "Hogar",
-      "imagen": "http://127.0.0.1:8000/imagenes/JuegoSartenes.webp",
+      "imagen": "https://full-store-api-39oh.vercel.app/imagenes/JuegoSartenes.webp",
       "id_proveedor": 4
     },
     {
@@ -110,7 +110,7 @@
       "precio": 449.99,
       "stock": 35,
       "categoria": "Tecnología",
-      "imagen": "http://127.0.0.1:8000/imagenes/Monitor-Gamer.webp",
+      "imagen": "https://full-store-api-39oh.vercel.app/imagenes/Monitor-Gamer.webp",
       "id_proveedor": 10
     },
     {
@@ -126,7 +126,7 @@
       "precio": 149.99,
       "stock": 30,
       "categoria": "Aire Libre",
-      "imagen": "http://127.0.0.1:8000/imagenes/Tienda-Campana-.webp",
+      "imagen": "https://full-store-api-39oh.vercel.app/imagenes/Tienda-Campana-.webp",
       "id_proveedor": 3
     }
   ]
